@@ -8,6 +8,9 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+/* font-family: 'Chivo Mono', monospace;
+font-family: 'Martian Mono', monospace; */
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -24,4 +27,15 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  font-family: "Chivo Mono", monospace;
+}
+
+img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
 }
